@@ -1,0 +1,233 @@
+*{
+    /* reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* guia temporal donde comienza y termina ,mis elementos */
+    /*border: 1px solid blue;*/
+    font-family: 'Open Sans', sans-serif;
+    
+}
+header {
+    /* linear-gradient (direccion_grades, color1,color2) */
+    background-image: linear-gradient(45deg,#3dada4,#c71fe6);
+    color: white;
+   }
+
+.contenedor{
+    max-width: 900px;
+    /* arribayabajo costados */
+    /* auto = navegador tu elige */
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction:row es por defecto */
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    /* remover viñetas */
+    list-style-type: none;
+}
+nav li{
+    margin: 0 5px;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0px;
+    border-radius: 20px;
+    color: white;
+    max-height: 40 px;
+
+}
+button:hover {
+  /* puntero está encima */
+    background-color: white;
+    /* rgb (rr,gg,bb) */
+    color: rgb(59, 59,59);
+}
+
+.hero{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* al h1,h5 y div dentro de la clase hero le añado un margin de 10px */
+.hero h1,h5,div{
+    margin: 10px;
+    
+}
+
+.hero h1{
+    font-size: calc(16px + 2vw);
+    text-align: center;
+}
+    
+
+
+.hero img{
+    max-width:75vw;
+}
+
+/* {tarjetas */
+.caracteristicas{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.tarjetas{
+    display:flex
+
+}
+
+.tarjeta{
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow:d_ejex, d_ejey , difuminado*/
+    box-shadow: 0 0 20px rgb(63, 63, 63);
+}
+.tarjeta *{
+    margin: 5px 0;
+}
+
+. tarjeta img{
+    width: 60px;
+}
+
+.tarjeta a{
+    text-decoration: none;
+}
+
+/* numeros enteros , odd(impares) y even (pares) */
+.tarjeta:nth-of-type(2){
+    background-image: linear-gradient(45deg,#3dada4,
+    c71fe6);
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#second {
+    /* linear-gradient (direccion_grades, color1,color2) */
+    background-image: linear-gradient(45deg,#3dada4,#c71fe6);
+    color: white;
+   }
+
+   
+
+.container1 h2{
+    font-weight: 500;
+    font-size: 42px;
+    letter-spacing: 0.3px;
+    color: black;
+    text-align: center;
+}
+
+.container1 h4 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.precios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px;
+    border-radius: 10px;
+    /* box-shadow:d_ejex, d_ejey , difuminado*/
+    border: 1px solid #dedede;
+    
+ 
+    
+}
+.precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+  }
+
+  .monto {
+    font-weight: 600 ;
+    font-size: 55px ;
+    color: #30d7ba ;
+    
+  }
+
+  .moneda {
+    font-weight: 600 ;
+    font-size: 20px ;
+    color: #30d7ba ;
+    
+  }
+  .texto_moneda{
+      margin-left: 60%;
+      font-size: 12px;
+  }
+
+  .container2{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .parrafos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .parrafos p{
+      margin-bottom: 10px;
+  }
+
+  .boton  button{
+      background-color: #30d7ba;
+      width: 200px;
+      height: 48px;
+  }
+
+  .boton{
+      display: flex;
+      align-items: center;
+
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      margin-bottom: 25px;
+      margin-right: 15px;
+    }
+  }
+
+  @media (max-widht: 768){
+      .container2{
+          display: flex;
+          flex-direction: column;
+      }
+      .precios
+      margin-bottom: 25px;
+      margin-bottom: 25px;
+
+    }
+  }
+  
+
+ 
